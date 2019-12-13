@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "77439b9a-126e-4c1a-aa0c-ef917eb1b468",
+		"name": "MyWork Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sapient",
+			"item": [
+				{
+					"name": "AddSuppliers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Kolkatta Suppliers\",\r\n\"description\": \"Kolkatta Zone from India\",\r\n\"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/add/suppliers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"add",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Brand",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"GAS\",\r\n\"description\": \"GAS Multinational\",\r\n\"active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/add/brand",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"add",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupByColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/products/groupBy/color/Green",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"groupBy",
+								"color",
+								"Green"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupByBrand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/products/groupBy/brand/ZARA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"groupBy",
+								"brand",
+								"ZARA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupByPrice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/products/groupBy/price/1800",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"groupBy",
+								"price",
+								"1800"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupBySize",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/products/groupBy/size/M",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"groupBy",
+								"size",
+								"M"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GroupBySKU",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/products/groupBy/sku/ZARA_JE_JEANS_1_1_100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"groupBy",
+								"sku",
+								"ZARA_JE_JEANS_1_1_100"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
